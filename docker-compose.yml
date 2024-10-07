@@ -1,0 +1,7 @@
+services:
+  phpmyadmin-env:
+    container_name: phpmyadmin-env
+    image: phpmyadmin
+    ports:
+      - "${PORT:-8081}:80"
+    env_file: .env
